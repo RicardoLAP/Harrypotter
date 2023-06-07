@@ -24,11 +24,8 @@ function determinarCasaHarryPotter(personagem) {
 
     return casa;
 }
-
-  // Exemplos de uso:
-  console.log(determinarCasaHarryPotter("Sibila Trelawney")); // Saída: Corvinal
-  console.log(determinarCasaHarryPotter("Cho Chang")); // Saída: Corvinal
-  console.log(determinarCasaHarryPotter("Peter Pettigrew")); // Saída: Lufa-Lufa
-  console.log(determinarCasaHarryPotter("Ninfadora Tonks")); // Saída: Grifinória
-  console.log(determinarCasaHarryPotter("Narcisa Malfoy")); // Saída: Sonserina
-  console.log(determinarCasaHarryPotter("Harry Potter")); // Saída: Desconhecido
+function exibirCasa() {
+    var personagem = document.getElementById("personagemInput").value;
+    var resultado = document.getElementById("resultado");
+    resultado.innerHTML = determinarCasaHarryPotter(personagem);
+}
